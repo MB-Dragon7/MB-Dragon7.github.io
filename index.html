@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oil Shop — Pure. Natural. Healthy.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">🚚 Free Delivery on orders above ₹499 <span>☎ +91 98765 43210 &nbsp; ✉ support@oilshop.com</span></div>
+
+  <header>
+    <div class="logo"><div class="leaf">◒</div><div><strong>Oil Shop</strong><small>Pure. Natural. Healthy.</small></div></div>
+    <nav>
+      <a href="#home">Home</a><a href="#products">Products</a><a href="#about">About Us</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">🛒 <b id="cartCount">0</b> <span id="cartTotal">₹0</span></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">100% NATURAL • PREMIUM QUALITY</p>
+        <h1>Pure Oils for <em>A Healthier You</em></h1>
+        <p>Cold-pressed and carefully sourced cooking oils for everyday healthy living.</p>
+        <a class="primary" href="#products">Shop Now</a>
+      </div>
+      <div class="hero-art">🫙 🌻 🫙 🌿</div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-head">
+        <div><p class="eyebrow">OUR COLLECTION</p><h2>Best Selling Oils</h2></div>
+        <input id="search" type="search" placeholder="Search oils...">
+      </div>
+      <div class="products" id="productsGrid"></div>
+    </section>
+
+    <section class="benefits">
+      <div>🌿 <b>100% Natural</b><small>No chemicals or additives</small></div>
+      <div>🚚 <b>Fast Delivery</b><small>On orders above ₹499</small></div>
+      <div>🔒 <b>Secure Payment</b><small>100% safe & trusted</small></div>
+      <div>✓ <b>Best Quality</b><small>Premium quality oils</small></div>
+    </section>
+
+    <section class="about" id="about">
+      <p class="eyebrow">ABOUT US</p>
+      <h2>Good food starts with good oil.</h2>
+      <p>We bring premium everyday cooking oils to your kitchen with a focus on quality, freshness and transparent sourcing.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div><strong>Oil Shop</strong><p>Pure. Natural. Healthy.</p></div>
+    <div><b>Quick Links</b><p>Home<br>Products<br>About Us<br>Contact</p></div>
+    <div><b>Customer Service</b><p>My Orders<br>Returns & Refunds<br>Shipping Policy<br>Terms & Conditions</p></div>
+    <div><b>Newsletter</b><p>Get the latest offers.</p><div class="newsletter"><input placeholder="Your email"><button>Subscribe</button></div></div>
+    <div class="copyright">© 2026 Oil Shop. All rights reserved.</div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-head"><h2>Your Cart</h2><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="coupon"><input id="coupon" placeholder="Coupon code"><button id="couponBtn">Apply</button></div>
+    <div class="summary">
+      <div><span>Subtotal</span><b id="subtotal">₹0</b></div>
+      <div><span>Delivery</span><b id="delivery">₹0</b></div>
+      <div class="grand"><span>Total</span><b id="grandTotal">₹0</b></div>
+      <button class="checkout" id="checkout">Proceed to Checkout</button>
+      <button class="continue" id="continueShopping">Continue Shopping</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
